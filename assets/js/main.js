@@ -17,7 +17,7 @@ async function submitChoice() {
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
             'Accept-Encoding': 'application/gzip',
-            'X-RapidAPI-Key': '3f39adb57emsh5054d6959be2cc8p19e6dejsnd6ba520cf234',
+            'X-RapidAPI-Key': '*************************',
             'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
         },
         body: new URLSearchParams({

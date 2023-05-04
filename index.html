@@ -11,38 +11,48 @@
 
 </head>
 
-<body class="container-fluid p-0 m-0">
-    <header class="cpntainer-fluid bg-secondary text-light  p-5">
-        <h1 class="col-5 mx-auto text-center fs-1">Générateur d'excuse</h1>
+<body class="container-fluid p-0 m-0 bg-black">
+    <header class="cpntainer-fluid  text-warning  p-2">
+        <h1 class="col-5 mx-auto text-center fw-bold display-1">Générateur d'excuse</h1>
     </header>
-    <main class="container-fluid bg-dark-subtle pt-5 pb-5">
-        <div class="row pt-4 text-center">
-            <h2 class="mx-auto ">Choisissez un motif</h2>
-            <form action="" class="col-6 mx-auto row mt-4 mb-5">
-                <div class="col-7">
-                    <select id="choice" class="form-select shadow " aria-label="Default select example">
-                        <option value="" selected>Menu déroulant</option>
-                        <option value="family">Famille</option>
-                        <option value="office">Bureau</option>
-                        <option value="children">Enfant</option>
-                        <option value="college">Etudes</option>
-                        <option value="party">Fête</option>
-                        <option value="funny">Marrant</option>
-                        <option value="unbelievable">Incroyable</option>
-                        <option value="developers">Développeur</option>
-                        <option value="gaming">Gaming</option>
-                    </select>
+    <main class="container-fluid  pt-5 pb-5">
+        
+        <div class="row pt-4 ">
+            <div class="p-3 mb-4 bg-light rounded-3 col-11">
+                <div class="container-fluid py-5">
+                  <h2 class="display-5 fw-bold">Choisissez un contexte</h2>
+                  <form action="" class="col-6  row mt-4 mb-5">
+                    <div class="col-7">
+                        <select id="choice" class="form-select shadow bg-secondary-subtle fw-bold border border-secondary-subtle " aria-label="Default select example">
+                            <option value="" selected>Menu déroulant</option>
+                            <option value="family">Famille</option>
+                            <option value="office">Bureau</option>
+                            <option value="children">Enfant</option>
+                            <option value="college">Etudes</option>
+                            <option value="party">Fête</option>
+                            <option value="funny">Marrant</option>
+                            <option value="unbelievable">Incroyable</option>
+                            <option value="developers">Développeur</option>
+                            <option value="gaming">Gaming</option>
+                        </select>
+                    </div>
+                    <div class="col-2  mx-auto">
+                        <button type="button" class="btn btn-warning  shadow" onclick="submitChoice()">Valider</button>
+                    </div>
+                </form>
                 </div>
-                <div class="col-2  mx-auto">
-                    <button type="button" class="btn btn-warning  shadow" onclick="submitChoice()">Submit</button>
-                </div>
-            </form>
+              </div>
         </div>
-        <div class="row  text-center bg-light col-8 rounded p-4  m-5 mx-auto">
-            <p class="" id="result"></p>
+        <div class="container">
+            <h3 class="text-warning rounded col-4 mx-auto text-center p-2 display-6">Votre excuse :</h3>
+            <div class="row  text-center bg-light col-8 rounded p-4  m-2 mx-auto">
+                <p class="" id="result"></p>
+            </div>
         </div>
-    </main>
-    <footer class="bg-dark-subtle"></footer>
+        </main>
+    <footer class="bg-dark">
+        
+    </footer>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
